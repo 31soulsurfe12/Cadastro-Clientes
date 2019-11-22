@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-concluido.component';
 import { CommonModule } from '@angular/common';
 
+import { AuthGuard } from './AuthGuard';
+
 
 const routes: Routes = [
   { path: '', component: ContentComponent },

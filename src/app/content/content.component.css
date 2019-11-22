@@ -32,7 +32,7 @@ min-height: 100%;
 width: auto;
 height: auto;
 z-index: -1000;
-background: url('https://github.com/daniloagostinho/traning-book/blob/master/src/assets/images/bg_banking.png?raw=true') no-repeat;
+background-color: #8FBC8F;
 background-size: cover;
 }
 .btn-home-cadastro-clientes {

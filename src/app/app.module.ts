@@ -23,6 +23,7 @@ import { AuthService } from './AuthService';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { AuthService } from './AuthService';
     CadastroConcluidoComponent,
     SemAcessoComponent,
     LoginComponent,
-    ModalComponent
+    ModalComponent,
+
   ],
   imports: [
     BrowserModule,
