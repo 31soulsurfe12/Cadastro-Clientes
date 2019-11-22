@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { ModalComponent } from './modal/modal.component';
 import { AuthGuard } from './AuthGuard';
 import { AuthService } from './AuthService';
+import { HomeLogadaComponent } from './home-logada/home-logada.component';
 
 
 
@@ -34,6 +35,7 @@ import { AuthService } from './AuthService';
     SemAcessoComponent,
     LoginComponent,
     ModalComponent,
+    HomeLogadaComponent,
 
   ],
   imports: [

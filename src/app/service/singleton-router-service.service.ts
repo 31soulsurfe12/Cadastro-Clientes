@@ -5,5 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class SingletonRouterServiceService {
 
-  constructor() { }
+  private credentials = true;
+
+  getCredentials(): boolean {
+    return this.credentials;
+  }
+
+  setCredentials(credentials: boolean) {
+    this.credentials = credentials;
+  }
 }

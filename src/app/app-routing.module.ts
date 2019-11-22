@@ -8,12 +8,14 @@ import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-conclu
 import { CommonModule } from '@angular/common';
 
 import { AuthGuard } from './AuthGuard';
+import { HomeLogadaComponent } from './home-logada/home-logada.component';
 
 
 const routes: Routes = [
   { path: '', component: ContentComponent },
   { path: 'cadastro-clientes', component: CadastroClientesComponent },
   { path: 'cadastro-concluido', component: CadastroConcluidoComponent },
+  { path: 'home-logada', component: HomeLogadaComponent, canActivate: [AuthGuard] },
   { path: 'sem-acesso', component: SemAcessoComponent},
   { path: 'login', component: LoginComponent},
 ];
