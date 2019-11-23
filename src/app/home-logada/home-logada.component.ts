@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-logada',
@@ -16,7 +17,10 @@ export class HomeLogadaComponent implements OnInit {
     saldoPoupanca;
     getCadastro;
     nameCliente;
-  constructor(private el: ElementRef) { }
+
+  constructor(private el: ElementRef,
+              private router: Router,
+              ) { }
 
   ngOnInit() {
     console.log(this.el.nativeElement);
@@ -33,6 +37,7 @@ export class HomeLogadaComponent implements OnInit {
     this.getCadastro = JSON.parse(localStorage.getItem('cadastro'));
     this.nameCliente = this.getCadastro.nome;
     console.log(this.nameCliente);
+    this.retornoContent();
   }
   // Criar serviço para consumir
      pegaSaldo() {
@@ -81,5 +86,8 @@ export class HomeLogadaComponent implements OnInit {
        this.pegasaldoParcial();
        this.pegavalorParcela();
        this.pegasaldoPoupanca();
+     }
+     retornoContent() {
+      this.router.navigate([ '/content' ]);
      }
 }

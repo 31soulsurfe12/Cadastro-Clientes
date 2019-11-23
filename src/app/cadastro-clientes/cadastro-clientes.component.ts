@@ -46,7 +46,7 @@ export class CadastroClientesComponent implements OnInit {
   verificaCadastro() {
     setTimeout(() => {
       if (localStorage.getItem('cadastro')) {
-        // TODO REDIRECIIONAR PARA PAGINA DE CADASTRO CONCLUIDO
+        // REDIRECIIONAR PARA PAGINA DE CADASTRO CONCLUIDO
         this.router.navigate(['cadastro-concluido']);
       } else {
         return false;

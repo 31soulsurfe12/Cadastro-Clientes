@@ -18,6 +18,7 @@ import { ModalComponent } from './modal/modal.component';
 import { AuthGuard } from './AuthGuard';
 import { AuthService } from './AuthService';
 import { HomeLogadaComponent } from './home-logada/home-logada.component';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
 
 
 
@@ -43,7 +44,8 @@ import { HomeLogadaComponent } from './home-logada/home-logada.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxMaskModule.forRoot()
 
   ],
   providers: [AuthGuard, AuthService, SingletonRouterServiceService],
