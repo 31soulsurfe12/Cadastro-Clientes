@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
     private router: Router,
     public dialog: MatDialog) { }
 
+
   ngOnInit() {
     this.formLogin = this.fb.group({
       cpf: ['']

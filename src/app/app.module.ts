@@ -37,7 +37,7 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MatDialogModule,
     ReactiveFormsModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
 
   ],
   providers: [AuthGuard, AuthService],
