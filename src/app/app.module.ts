@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes.component';
 import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-concluido.component';
-import { SemAcessoComponent } from './sem-acesso/sem-acesso.component';
 import { LoginComponent } from './login/login.component';
 import { ModalComponent } from './modal/modal.component';
 import { AuthGuard } from './AuthGuard';
@@ -28,7 +27,6 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     CadastroClientesComponent,
     CadastroConcluidoComponent,
-    SemAcessoComponent,
     LoginComponent,
     ModalComponent,
     ContaComponent,

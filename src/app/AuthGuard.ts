@@ -15,10 +15,10 @@ canActivate() {
 if (this.authService.isAuthenticated()) {
 // Caso exista token retorna true
 return true;
-} else {
+} // else {
 // Caso não exista envia para página de cpf não é cadastrado
-this.router.navigate(['/sem-acesso']);
-return false;
-}
+// this.router.navigate(['/sem-acesso']);
+// return false;
+// }
 }
 }

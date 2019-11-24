@@ -1,4 +1,4 @@
-import { SemAcessoComponent } from './sem-acesso/sem-acesso.component';
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes.component';
@@ -16,7 +16,6 @@ const routes: Routes = [
   { path: 'cadastro-clientes', component: CadastroClientesComponent },
   { path: 'cadastro-concluido', component: CadastroConcluidoComponent },
   { path: 'conta', component: ContaComponent, canActivate: [AuthGuard] },
-  { path: 'sem-acesso', component: SemAcessoComponent},
   { path: 'login', component: LoginComponent},
 ];
 
