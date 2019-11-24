@@ -17,7 +17,7 @@ if (this.authService.isAuthenticated()) {
 return true;
 } else {
 // Caso não exista envia para página de cpf não é cadastrado
-this.router.navigate(['/acesso-negado']);
+this.router.navigate(['/sem-acesso']);
 return false;
 }
 }

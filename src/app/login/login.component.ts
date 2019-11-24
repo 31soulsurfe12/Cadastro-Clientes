@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
     const cpfPersistido = this.getCadastro.cpf;
     const cpfDigitado = this.formLogin.get('cpf').value;
     if (cpfPersistido === cpfDigitado) {
-      this.router.navigate(['home-logada']);
+      this.router.navigate(['conta']);
     } else {
       this.openDialog();
     }

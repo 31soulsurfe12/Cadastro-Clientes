@@ -2,13 +2,13 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home-logada',
-  templateUrl: './home-logada.component.html',
-  styleUrls: ['./home-logada.component.css']
+  selector: 'app-conta',
+  templateUrl: './conta.component.html',
+  styleUrls: ['./conta.component.css']
 })
-export class HomeLogadaComponent implements OnInit {
+export class ContaComponent implements OnInit {
 
-    statusCliente;
+  statusCliente;
     saldoCliente;
     limeteCliente;
     saldoParcial;
@@ -88,6 +88,6 @@ export class HomeLogadaComponent implements OnInit {
        this.pegasaldoPoupanca();
      }
      retornoContent() {
-      this.router.navigate([ '/content' ]);
+      this.router.navigate([ '/home' ]);
      }
 }
