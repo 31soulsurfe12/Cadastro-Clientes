@@ -1,4 +1,4 @@
-import { SingletonRouterServiceService } from './service/singleton-router-service.service';
+
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -42,7 +42,7 @@ import { HomeComponent } from './home/home.component';
     NgxMaskModule.forRoot()
 
   ],
-  providers: [AuthGuard, AuthService, SingletonRouterServiceService],
+  providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent],
   entryComponents: [ModalComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

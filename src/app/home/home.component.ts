@@ -12,8 +12,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-  gotoCadastroClientes() {
+  setCadastroClientes() {
     this.router.navigate(['cadastro-clientes']);
+   }
+   setLogin() {
+    this.router.navigate(['login']);
    }
 
 }
