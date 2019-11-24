@@ -8,7 +8,6 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes.component';
 import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-concluido.component';
 import { LoginComponent } from './login/login.component';
@@ -24,7 +23,6 @@ import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     CadastroClientesComponent,
     CadastroConcluidoComponent,
     LoginComponent,
